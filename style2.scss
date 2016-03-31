@@ -1,0 +1,39 @@
+$azul : blue;
+$vermelho: red;
+$laranja: orange;
+
+@function fixborder($cor){
+  @return  desaturate(darken($cor, 25%),80%);
+}
+
+@mixin geraBorda($cor){
+  @extend .box;
+  border-color: fixborder($cor);
+  background-color:$cor;
+}
+
+body{
+  font-size: 20px;
+}
+.box{
+  padding: 20px;
+  margin:20px auto;
+  border:5px solid;
+  border-color: fixborder($azul);
+  background-color:$azul;
+  em{
+    font-weight: bold;
+  }
+}
+
+.vermelho{
+  @include geraBorda($vermelho);
+}
+
+.laranja{
+  @include geraBorda($laranja);
+}
+
+.bordaX{
+  @include geraBorda(#FFF);
+}

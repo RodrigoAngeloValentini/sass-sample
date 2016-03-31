@@ -1,0 +1,2 @@
+cd directory
+sass --watch . --style compressed
