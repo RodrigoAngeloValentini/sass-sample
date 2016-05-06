@@ -1,39 +1,45 @@
-$azul : blue;
-$vermelho: red;
-$laranja: orange;
+$azul: #3E5680;
+$vermelho: #FF755F;
+$laranja: #FFB435;
 
-@function fixborder($cor){
-  @return  desaturate(darken($cor, 25%),80%);
+@function fixBorder($cor) {
+  @return desaturate(darken($cor, 25%), 80%);
 }
 
-@mixin geraBorda($cor){
+@mixin geraBorda($cor) {
   @extend .box;
-  border-color: fixborder($cor);
-  background-color:$cor;
+  border-color: fixBorder($cor);
+  background-color: $cor;
+
+  em {
+    color: fixBorder($cor);
+  }
 }
 
-body{
+body {
   font-size: 20px;
 }
-.box{
+
+.box {
+  border: 5px solid;
   padding: 20px;
-  margin:20px auto;
-  border:5px solid;
-  border-color: fixborder($azul);
-  background-color:$azul;
-  em{
+  margin: 20px auto;
+  border-color: fixBorder($azul);
+  background-color: $azul;
+
+  em {
     font-weight: bold;
   }
 }
 
-.vermelho{
+.vermelho {
   @include geraBorda($vermelho);
 }
 
-.laranja{
+.laranja {
   @include geraBorda($laranja);
 }
 
-.bordaX{
+.bordaX {
   @include geraBorda(#FFF);
 }

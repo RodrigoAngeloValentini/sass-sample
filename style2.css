@@ -1,2 +1,29 @@
-body{font-size:20px}.box,.vermelho,.laranja,.bordaX{padding:20px;margin:20px auto;border:5px solid;border-color:#33334d;background-color:blue}.box em,.vermelho em,.laranja em,.bordaX em{font-weight:bold}.vermelho{border-color:#4d3333;background-color:red}.laranja{border-color:#4d4433;background-color:orange}.bordaX{border-color:#bfbfbf;background-color:#FFF}
-/*# sourceMappingURL=style2.css.map */
+body {
+  font-size: 20px; }
+
+.box, .vermelho, .laranja, .bordaX {
+  border: 5px solid;
+  padding: 20px;
+  margin: 20px auto;
+  border-color: #1f1f1f;
+  background-color: #3e5680; }
+  .box em, .vermelho em, .laranja em, .bordaX em {
+    font-weight: bold; }
+
+.vermelho {
+  border-color: #865f59;
+  background-color: #ff755f; }
+  .vermelho em {
+    color: #865f59; }
+
+.laranja {
+  border-color: #6c5f48;
+  background-color: #ffb435; }
+  .laranja em {
+    color: #6c5f48; }
+
+.bordaX {
+  border-color: #bfbfbf;
+  background-color: white; }
+  .bordaX em {
+    color: #bfbfbf; }

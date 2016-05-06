@@ -1,0 +1,46 @@
+/* line 50, icon/*.png */
+.icon-sprite, .icon-download {
+  background: url('/images/icon-scb7d4ccae6.png') no-repeat;
+}
+
+/* line 60, ../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-download {
+  background-position: 0 -302px;
+}
+/* line 43, ../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-download:hover, .icon-download.download_hover, .icon-download.download-hover {
+  background-position: 0 0;
+}
+
+/* line 9, ../sass/screen.scss */
+.sombra {
+  text-shadow: 0px 5px 5px rgba(255, 0, 0, 0.6);
+}
+
+/* line 13, ../sass/screen.scss */
+.icon-download {
+  width: 302px;
+  height: 302px;
+}
+
+/* line 18, ../sass/screen.scss */
+.box {
+  border: 1px solid red;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: green;
+  background-image: url('/images/background/back.jpg?1390390772');
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+/* line 27, ../sass/screen.scss */
+.box:hover {
+  background: blue;
+  -webkit-box-shadow: 0px 0px 90px #333333;
+  -moz-box-shadow: 0px 0px 90px #333333;
+  box-shadow: 0px 0px 90px #333333;
+}
